@@ -1,0 +1,354 @@
+@import url('http://font.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    background-color: #000;
+    line-height: 1.5;
+
+}
+
+/*------------*/
+
+
+.toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #2bbaff;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.toggle.active {
+    background: #e70d4f;
+    transition: 0.5s;
+}
+
+.toggle ion-icon {
+    position: absolute;
+    color: #fff;
+    font-size: 34px;
+    display: none;
+}
+
+.toggle ion-icon.open,
+.toggle.active ion-icon.close {
+    display: block;
+
+}
+
+.toggle ion-icon.close,
+.toggle.active ion-icon.open {
+    display: none;
+}
+
+/*------------*/
+header {
+    display: flex;
+    flex-wrap: wrap;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+
+}
+
+main {
+    overflow: hidden;
+}
+
+.h1box {
+    font-size: 40px;
+}
+
+.sp1 {
+    position: absolute;
+    bottom: -70%;
+    left: 50%;
+    width: 30%;
+    height: 10%;
+    background-image: linear-gradient(to right, #000000 0%, #434343 51%, #000000 100%)
+}
+
+.sp1 {
+    margin: 10px;
+    padding: 35px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+}
+
+
+.sp1:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
+
+.sp2 {
+    position: absolute;
+    bottom: -70%;
+    right: 50%;
+    width: 30%;
+    height: 10%;
+    background-image: linear-gradient(to right, #000000 0%, #434343 51%, #000000 100%)
+
+}
+
+.sp2 {
+    margin: 10px;
+    padding: 35px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+}
+
+.sp2:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
+
+.container {
+    position: relative;
+    width: 1000px;
+    height: 1000px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    top: 300px;
+    color: #fff;
+    text-align: center;
+    transition: 2.5s;
+    z-index: 1000;
+
+}
+
+
+.container h2, p {
+    margin-bottom: 20px;
+
+}
+
+.container .btn {
+
+    display: inline-block;
+    padding: 8px 20px;
+    background: #fff;
+    color: #333;
+    border-radius: 40px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    transition: 0.3ms;
+
+}
+
+.container .btn:hover,
+.container .btn:hover a {
+    background: #000000;
+    color: #fff;
+}
+
+.container .btn a {
+    text-decoration: none;
+}
+
+.web-app {
+    display: flex;
+    padding-top: 100px;
+    text-align: center;
+    color: #fff;
+    height: 200px;
+}
+
+h2 {
+    margin: 10px 0;
+    text-align: center;
+    color: #fff;
+    text-shadow: 4px 2px #333;
+}
+
+
+
+
+.big {
+    /*position: fixed;*/
+    display: flex;
+
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    background: #2bbaff;
+
+    /*background-image: linear-gradient(to right, #000000 0%, #434343  51%, #000000  100%);*/
+    border-radius: 50px;
+    overflow: no-display;
+}
+
+.wrapper .card {
+    border-radius: 10px;
+    /*object-fit: cover;*/
+    display: flex;
+    max-width: 300px;
+    height: 215px;
+    background: #2bbaff;
+    margin: 30px 10px;
+    padding: 20px 15px;
+    flex-direction: column;
+    box-shadow: 0 7px 202px rgba(0, 0, 0, 0.3);
+    transition: 0.3s ease-in-out;
+    position: static;
+
+
+}
+
+.wrapper .card:hover {
+    height: 400px;
+}
+
+.wrapper .card .imgBx {
+    position: relative;
+    width: 260px;
+    height: 260px;
+    top: -60px;
+    left: 20px;
+    border-radius: 10px;
+    /*border: 150px solid transparent;*/
+    /*border-bottom: 0;*/
+    /*border-bottom: 300px solid red;*/
+    /*z-index: 1;*/
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.7);
+}
+
+.wrapper .card .imgBx img {
+    border-radius: 10px;
+    max-width: 100%;
+    height: 100%;
+
+
+}
+
+.wrapper .card .content {
+    /*overflow: hidden;*/
+
+    position: relative;
+    margin-bottom: -100px;
+    padding: 10px 15px;
+    text-align: center;
+    color: #000;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+
+.wrapper .card:hover .content {
+    visibility: visible;
+    opacity: 1;
+    margin-top: -40px;
+    transition-delay: 0.3s;
+    /*transform: skewY(180deg);*/
+
+    /*z-index: 1;*/
+}
+
+#section-c {
+    display: flex;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #2332;
+
+}
+
+#section-d {
+    display: flex;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+}
+
+#section-d .box1 {
+    display: inline-block;
+    text-align: center;
+    background-color: #232323;
+    width: 550px;
+    height: 172px;
+    transition: 0.5s;
+}
+
+#section-d .box2 {
+    display: inline-block;
+    text-align: center;
+    background-color: #1BC5;
+    width: 550px;
+    /*border-top-right-radius: 20px;*/
+    /*border-bottom-right-radius: 20px;*/
+
+    transition: 0.5s;
+}
+
+#section-d .box1:hover {
+    background-color: #cbc6c6;
+    color: #000;
+    /*transform: skewY(180deg)*/
+
+
+}
+
+#section-d .box2:hover {
+    background-color: #cbc6c6;
+    color: #000;
+}
+
+#main-footer {
+    background-color: #1D262D;
+    display: flex;
+    color: white;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+}
+
+.b {
+    margin-right: 300px;
+}
+
+.s {
+    margin-left: 300px;
+}
+
+.s a {
+    text-decoration: none;
+    color: #6e4dcb;
+    size: portrait;
+}
+
+

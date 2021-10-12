@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+<section>
+    <header style=" background-image: url('./images/dasturchi.jpg');">
+
+        <div class="toggle">
+            <ion-icon name="menu-outline" class="open"></ion-icon>
+            <ion-icon name="close-outline" class="close"></ion-icon>
+        </div>
+
+        <div class="container">
+
+                <h2 class="h1box">Welcome to Acme Web Solutions</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Adipisci eum error earum soluta <br>voluptatum nisi laboriosam eos saepe asperiores dolorum.</p>
+
+
+            <div class="btn"><a href="#select">
+                Read More</a></div>
+
+        </div>
+    </header>
+</section>
+
+<main>
+<span class="sp1">aliquam aperiam repellendus.
+            Perferendis officiis deserunt velit voluptas nobis sequi animi totam, accusantium, ex eius quia, natus
+            quo? </span>
+<span class="sp2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe sint eligendi possimus?
+            Unde officiis magnam laborum ipsa distinctio odio, vero dolores dicta</span>
+    <h2>Web & Application Development</h2>
+    <div class="web-app">
+
+<!--        <p> </p>-->
+<!--        <p></p>-->
+
+    </div>
+    <div class="big">
+        <div class="wrapper" id="select">
+            <div class="card">
+                <div class="imgBx">
+                    <img src="https://static.pexels.com/photos/574077/pexels-photo-574077.jpeg" alt="rasm yo'q">
+                </div>
+                <div class="content">
+                    <h3>Web Development</h3>
+                    <div class="content-text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Nostrum culpa neque quo eum et quasi velit voluptatum cum maiores exercitationem.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="wrapper">
+
+            <div class="card">
+                <div class="imgBx">
+                    <img src="https://static.pexels.com/photos/261628/pexels-photo-261628.jpeg" alt="rasm yo'q">
+                </div>
+                <div class="content">
+                    <h3>Mobile Applications</h3>
+                    <div class="content-text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Nostrum culpa neque quo eum et quasi velit voluptatum cum maiores exercitationem.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="wrapper">
+            <div class="effect">
+                <div class="card">
+                    <div class="imgBx">
+                        <img src="https://static.pexels.com/photos/265087/pexels-photo-265087.jpeg" alt="rasm yo'q">
+                    </div>
+                    <div class="content">
+                        <h3>Tech Marketing</h3>
+                        <div class="content-text">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Nostrum culpa neque quo eum et quasi velit voluptatum cum maiores exercitationem.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section id="section-c" >
+        <div class="content-wrap">
+            <h2 class="content-title">We handle all of your digital needs</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime nam rerum vel earum error fugiat
+                cupiditate, <br>dolore eius! Minus, explicabo.</p>
+        </div>
+    </section>
+    <div id="section-d">
+
+        <div class="box1">
+            <h2 class="content-title">Contact Us</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum, suscipit. Rerum ducimus a quod, ut et
+                voluptas obcaecati unde fuga.</p>
+            <p>contact@acmewebsolutions.test</p>
+        </div>
+        <div class="box2">
+            <h2 class="content-title">About Our Company</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio earum porro deserunt, deleniti,
+                quae facere repudiandae, officiis est exercitationem nobis iusto doloremque! Soluta excepturi in
+                aut suscipit amet temporibus quo?</p>
+        </div>
+    </div>
+</main>
+<footer id="main-footer"  >
+    <div class="b">Acme Web Solutions</div>
+    <div class="s">Project By <a href="#" target="_blank">Traversy Media</a></div>
+</footer>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script>
+
+
+    let menuToggle = document.querySelector('.toggle')
+    let navigation = document.querySelector('.navigation')
+    menuToggle.onclick = function () {
+        menuToggle.classList.toggle('active')
+        navigation.classList.toggle('active')
+    }
+    let list = document.querySelectorAll('.list')
+    for (let i = 0; i < list.length; i++) {
+        list[i].onclick = function () {
+            let l = 0;
+            while (l < list.length) {
+                list[l++].className = 'list';
+            }
+            list[i].className = 'list active'
+        }
+    }
+</script>
+</body>
+</html>
